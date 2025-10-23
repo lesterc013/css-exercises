@@ -1,1 +1,14 @@
 /* Add CSS Styling */
+
+/* Works as well */
+/* .container .text {
+  background-color: yellow;
+  color: red;
+  text-align: center;
+} */
+
+div p {
+  background-color: yellow;
+  color: red;
+  text-align: center;
+}
