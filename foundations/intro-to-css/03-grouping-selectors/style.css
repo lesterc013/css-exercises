@@ -1,1 +1,17 @@
 /* Add CSS Styling */
+
+.btn-one {
+  background-color: black;
+  color: white;
+}
+
+.btn-two {
+  background-color: yellow;
+}
+
+/* Grouping selector */
+.btn-one,
+.btn-two {
+  font-size: 28px;
+  font-family: "Helvetica", "Times New Roman", sans-serif;
+}
