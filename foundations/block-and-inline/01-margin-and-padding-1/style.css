@@ -1,21 +1,22 @@
 body {
   max-width: 600px;
   margin: 0 auto;
+  border: 1px solid black;
 }
 
 .one {
   background: pink;
   border: 3px solid blue;
   /* CHANGE ME */
-  padding: 0px;
-  margin: 0px;
+  padding: 32px;
+  margin: 12px;
 }
 
 .two {
   background: lightblue;
   border: 3px solid purple;
   /* CHANGE ME */
-  margin-bottom: 0px;
+  margin-bottom: 48px;
 }
 
 .three {
@@ -23,6 +24,21 @@ body {
   border: 3px solid brown;
   width: 200px;
   /* CHANGE ME */
-  padding: 0px;
-  margin-left: 0px;
+  padding: 32px;
+  /* margin-right: auto; */
+  margin-left: auto;
 }
+
+/*
+body's style means
+- The max-width is 600px
+- 0 margin top and bottom, 
+- auto margin left and right means: element first takes up the specified width, then browser splits the remaining space equally between the left and right margins. Effectively, centering the body element in the page.
+
+.three
+- It has a width of 200px
+- If i use margin-left and right auto, it will center the div bcos same concept as body
+- BUT if I use margin-left auto only, what does that mean?
+- It means, specify the element's max width first. Then the remaining space, I allocate to the margin-left
+- Which is why to "right-align" the .three, I just need to margin-left: auto
+*/
