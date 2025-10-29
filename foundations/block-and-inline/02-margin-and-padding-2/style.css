@@ -1,3 +1,8 @@
+/* To get rid of any default margins (h1) */
+* {
+  margin: 0;
+}
+
 body {
   background: #eee;
   font-family: sans-serif;
@@ -7,6 +12,13 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 10px;
+}
+
+/* Applied to all three elements in the card */
+.card-child {
+  margin: 10px auto 0px;
+  padding: 10px;
 }
 
 .title {
@@ -19,9 +31,13 @@ body {
 
 .button-container {
   background: #e3f4ff;
+  text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
 }
