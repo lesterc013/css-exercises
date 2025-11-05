@@ -1,6 +1,10 @@
-.header  {
+.header {
   font-family: monospace;
   background: papayawhip;
+  /* This is flex to position the three children divs */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -9,11 +13,27 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin: 10px 0;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /* Remove default ul margin and padding */
+  margin: 0;
+  padding: 0;
+  /* Flex ul to adjust position of li */
+  display: flex;
+  gap: 10px;
+}
+
+/* Adjust margins of .left-links and .right-links to make them have space from the edges and LOGO? */
+.left-links {
+  margin-left: 10px;
+}
+
+.right-links {
+  margin-right: 10px;
 }
 
 a {
