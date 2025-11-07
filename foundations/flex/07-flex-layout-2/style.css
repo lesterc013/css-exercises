@@ -60,6 +60,8 @@ a:link {
 
 .content {
   display: flex;
+  /* Missing from solution: To make sure the .content fills up the entire space instead of just taking what it needs. Need to rmb this, else if the things inside .content is small, then the footer will float upwards */
+  flex: 1;
 }
 
 .sidebar {
@@ -78,4 +80,9 @@ a:link {
   height: 300px;
   /* Setting a flex-basis means hypothetical width is 300px. Grow and shrink are 0 as we don't want the cards to resize when the container resizes. We allow flex-wrap to wrap them if not enough space. */
   flex: 0 0 300px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
