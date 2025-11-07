@@ -55,3 +55,15 @@ a:link {
   justify-content: center;
   align-items: center;
 }
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  height: 300px;
+  /* Setting a flex-basis means hypothetical width is 300px. Grow and shrink are 0 as we don't want the cards to resize when the container resizes. We allow flex-wrap to wrap them if not enough space. */
+  flex: 0 0 300px;
+}
