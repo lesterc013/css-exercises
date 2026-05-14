@@ -15,12 +15,8 @@ ul {
 
 .container {
   text-align: center;
-  /* At minimum, the container fills the screen. Can grow if needed */
-  min-height: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  /* Key to removing the whitespace/extra growth from the navbar and footer */
-  grid-template-rows: auto auto 1fr auto;
   gap: 4px;
 }
 
